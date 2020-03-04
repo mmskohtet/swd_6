@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            align-items: flex-end;
+            height: 100vh;
+        }
+
+
+        .img{
+            width: 100px;
+            /*margin: 100px auto;*/
+            display: block;
+            transition: 1s;
+            transform: translate(350px,0px);
+            animation: ani 3s linear 1 alternate;
+        }
+        /*img:active{*/
+        /*    transform: scale(1.2);*/
+        /*}*/
+
+        @keyframes ani {
+
+            0%{
+
+                transform: translateY(-400px);
+
+            }
+            40%{
+
+                transform: translateY(0);
+
+
+            }
+            60%{
+
+                transform: translate(150px,-200px);
+
+
+            }
+            70%{
+
+                transform: translate(250px,0px);
+
+
+            }
+            80%{
+
+                transform: translate(350px,-160px);
+
+
+            }
+            100%{
+                transform: translate(350px,0px);
+
+            }
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<img class="img" src="img/50488607_2939892709361649_673715781300649984_o.jpg" alt="">
+
+</body>
+</html>

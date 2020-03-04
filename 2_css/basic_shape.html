@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        div{
+            display: inline-block;
+        }
+
+        .square{
+            width: 200px;
+            height: 200px;
+            background: #845EC2;
+
+        }
+        .square-rounded{
+            width: 200px;
+            height: 200px;
+            background: #D65DB1;
+            border-radius: 8px;
+
+        }
+
+        .rectangle{
+            width: 350px;
+            height: 200px;
+            background: #FF6F91;
+            border: 5px solid #FF6F91;
+            border-radius: 10px;
+        }
+
+        .outline-rectangle{
+            width: 350px;
+            height: 200px;
+            border: 5px solid #FF6F91;
+            border-radius: 10px;
+
+        }
+
+        .circle{
+            width: 200px;
+            height: 200px;
+            background: #2C73D2;
+            /*border-radius: 5px;*/
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .circle-avatar{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #4B4453;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 0;
+            border:5px solid black;
+        }
+
+        .circle-avatar:hover img{
+            transform: scale(1.1);
+        }
+
+        .circle-avatar img{
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        .img-avatar{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .triangle{
+            width: 0px;
+            height: 0px;
+            border: 100px solid #fff;
+            border-bottom-color: #FF8066;
+            border-top-width: 0px;
+
+        }
+
+        .right-triangle{
+            width: 0px;
+            height: 0px;
+            border: 100px solid #fff;
+            border-bottom-color: #FF8066;
+            border-left-color: #FF8066;
+            /*border-top-width: 0px;*/
+        }
+
+        .dialog-box{
+            display: inline-block;
+            margin-right: 50px;
+        }
+
+        .dialog-box .rag{
+            width: 300px;
+            height: 200px;
+            background: #00C89E;
+            border-radius: 30px;
+            display: block;
+        }
+
+        .dialog-box .trg{
+            width: 0;
+            height: 0;
+            border: 30px solid #fff;
+            border-top-color: #00C89E;
+            margin-left: 30px;
+            border-bottom-width: 0;
+            display: block;
+
+        }
+
+        .right-box{
+            width: 300px;
+            height: 200px;
+            background: #B198FF;
+            border-radius: 30px;
+            display: inline-block;
+            position: relative;
+
+        }
+        .right-box::after{
+            content: "";
+            width: 0;
+            height: 0;
+            border: 30px solid #fff;
+            border-left-color: #B198FF;
+            border-right-width: 0px;
+            position: absolute;
+            right: 0;
+            top: 60px;
+            margin-right: -30px;
+
+        }
+
+        .envelope{
+
+            width: 0px;
+            height: 0px;
+            border: 100px solid #928F99;
+            border-top-color: #494454;
+            /* border-top-width: 0px; */
+            margin-left: 50px;
+            border-bottom-width: 40px;
+            border-radius: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Square</h2>
+<div class="square"></div>
+<div class="square-rounded"></div>
+<hr>
+
+<h2>Rectangle</h2>
+<div class="rectangle"></div>
+<div class="outline-rectangle"></div>
+
+<hr>
+
+<h2>Circle</h2>
+<div class="circle"></div>
+
+<figure class="circle-avatar">
+    <img src="img/me-1.jpg" alt="">
+</figure>
+
+<img src="img/me-1.jpg" class="img-avatar">
+<hr>
+<h2>Triangle</h2>
+<div class="triangle"></div>
+<div class="right-triangle"></div>
+
+<hr>
+<h2>Dialog Box</h2>
+<section class="dialog-box">
+    <div class="rag"></div>
+    <div class="trg"></div>
+</section>
+
+<div class="right-box"></div>
+
+<div class="envelope"></div>
+
+
+
+</body>
+</html>

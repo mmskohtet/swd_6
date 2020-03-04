@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Spartan', sans-serif;
+        }
+
+        body{
+            background: #010101;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .output{
+            /*border: 1px solid white;*/
+            /*height: 150px;*/
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: 3em;
+            padding: 10px 15px;
+        }
+        .input{
+            display: flex;
+            width: 240px;
+            height: 290px;
+            flex-flow: row wrap;
+            /*border: 1px solid white;*/
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .key{
+
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .key-orange{
+            background-color: #fea009;
+            color: #fdf5ce;
+        }
+        .key-grey{
+            background-color: #a5a5a5;
+            color: #191919;
+
+        }
+        .key-dark{
+            background-color: #333333;
+            color: #f5f5f5;
+        }
+
+        .btn-double{
+            width: 110px;
+            border-radius: 28px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="calc">
+    <div class="output">0</div>
+    <div class="input">
+        <div class="key key-grey">AC</div>
+        <div class="key key-grey"> </div>
+        <div class="key key-grey">%</div>
+        <div class="key key-orange">/</div>
+        <div class="key key-dark">7</div>
+        <div class="key key-dark">8</div>
+        <div class="key key-dark">9</div>
+        <div class="key key-orange">x</div>
+        <div class="key key-dark">4</div>
+        <div class="key key-dark">5</div>
+        <div class="key key-dark">6</div>
+        <div class="key key-orange">-</div>
+        <div class="key key-dark">1</div>
+        <div class="key key-dark">2</div>
+        <div class="key key-dark">3</div>
+        <div class="key key-orange">+</div>
+        <div class="key key-dark btn-double">0</div>
+        <div class="key key-dark">.</div>
+        <div class="key key-orange">=</div>
+    </div>
+</div>
+
+</body>
+</html>

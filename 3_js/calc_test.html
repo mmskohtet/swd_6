@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="input"></div>
+
+<div id="keypad"></div>
+
+
+
+<script>
+
+    function show(x) {
+        if(x == "="){
+            let x = document.getElementById("input").innerHTML;
+            document.getElementById("input").innerHTML = eval(x);
+            // document.getElementById("input").innerHTML = eval(this.innerHTML);
+        }else{
+            document.getElementById("input").innerHTML += x;
+        }
+    }
+
+    for(let i = 0;i<= 9;i++){
+        document.getElementById("keypad").innerHTML += `<button onclick="show(${i})">${i}</button>`;
+    }
+
+    let calcKey = ["+","-","*","/","**","="];
+
+    for(let i=0;i< calcKey.length;i++){
+        document.getElementById("keypad").innerHTML += `<button onclick="show('${calcKey[i]}')">${calcKey[i]}</button>`;
+    }
+
+
+</script>
+
+</body>
+</html>

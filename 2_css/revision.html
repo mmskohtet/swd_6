@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <style>
+        body{
+            padding: 20px;
+            /*background-image: url("img/50488607_2939892709361649_673715781300649984_o.jpg");*/
+        }
+
+        .btn{
+
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: inline-block;
+            font-family: sans-serif;
+        }
+
+        .gmail-btn{
+            background: #D44638;
+        }
+
+        .fb-btn{
+            background: #3C5898;
+        }
+
+        .btn-youtube{
+            color: #FF0000;
+            border: 2px solid #FF0000;
+        }
+        .unorder-list{
+            list-style-type: square;
+        }
+
+        table{
+            /*border: 1px solid black;*/
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        thead{
+            background: #A1A0A3;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px 15px;
+
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            border:2px solid black;
+            overflow: scroll;
+            margin: 50px  auto;
+        }
+
+        .f-img{
+            width: 300px;
+        }
+        .f-p{
+            width: 400px;
+        }
+
+        .hover{
+            background: blue;
+            color: white;
+            transition: 1s;
+        }
+
+        .hover:active{
+            background: green;
+            color: orange;
+        }
+
+        .input-test{
+            border: 2px solid black;
+            padding: 10px;
+            width: 250px;
+        }
+
+        .input-test:focus{
+            background: #222;
+            color: #ffffff;
+        }
+
+        .element-test{
+
+        }
+        .element-test::before{
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: orange;
+
+        }
+        .element-test::after{
+            content: "this is after";
+        }
+
+    </style>
+</head>
+<body>
+
+<h4>Pseudo Class</h4>
+
+
+<p class="hover">san kyi tar</p>
+<input type="text" class="input-test">
+
+
+<hr>
+
+<h4>Pseudo Element</h4>
+
+<h1 class="element-test">this is testing for pseudo element</h1>
+
+
+<hr>
+
+
+<h4>Float</h4>
+
+<div class="float-test">
+    <img src="img/texture.png" class="f-img" alt="">
+    <p class="f-p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque consequuntur deleniti deserunt dignissimos earum, illo labore minus necessitatibus, quaerat recusandae rem similique tempore? Minus optio quis repellat!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad adipisci atque consequuntur deleniti deserunt dignissimos earum, illo labore minus necessitatibus, quaerat recusandae rem similique tempore? Minus optio quis repellat!
+    </p>
+    <div style="clear: both"></div>
+</div>
+
+
+<hr>
+
+
+<h4>max-</h4>
+
+<div class="box">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectettttur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectettttur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectettttur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectettttur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectettttur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+    Lorem ipsum dolor sit amet, consectettttur adipisicing elit. Accusantium assumenda autem deserunt doloribus esse et eum ipsa, nam pariatur perspiciatis praesentium quidem quis repudiandae rerum suscipit tempora tempore ullam voluptas.
+</div>
+
+
+<hr>
+
+
+<h4>Links</h4>
+
+<a href="http://gmail.com" class="btn gmail-btn">
+    <i class="fa fa-envelope "></i>
+    Gmail
+</a>
+<a href="http://facebook.com" class="btn fb-btn">
+    <i class="fa fa-facebook-official "></i>
+    Facebook
+</a>
+
+<a href="http://youtube.com" class="btn btn-youtube">
+    <i class="fa fa-youtube-play"></i>
+    Youtube
+</a>
+
+<hr>
+
+<h4>Lists</h4>
+
+<ul class="unorder-list">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Mango</li>
+    <li>Banana</li>
+</ul>
+
+<ol class="order-list">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Mango</li>
+    <li>Banana</li>
+</ol>
+
+<hr>
+
+<h4>Table</h4>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hein Htet Zan</td>
+        <td>09250152018</td>
+    </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h4>CSS Display Level</h4>
+
+<a href="">google</a>
+<a href="">youtube</a>
+<a href="">facebook</a>
+
+<p>one</p>
+<p>two</p>
+<p>three</p>
+
+<img src="img/texture.png" alt="">
+<img src="img/texture.png" alt="">
+<img src="img/texture.png" alt="">
+
+<div>
+    <div class="one"></div>
+    <div class="two"></div>
+</div>
+
+
+
+</body>
+</html>

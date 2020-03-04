@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1 id="result"></h1>
+<small id="showError"></small>
+<input type="text" id="inputInches">
+<button onclick="calc()">Calc Button</button>
+
+<script>
+
+    function showError(message) {
+        document.getElementById("showError").innerHTML = message;
+    }
+
+    function inputFilter(x){
+        x = Number(x);
+        console.log(x);
+        if(!x){
+            showError("number ma hoker par");
+        }else{
+
+            if(x <= 0){
+                showError("must be greater than 0");
+            }else{
+                return x;
+            }
+
+        }
+    }
+
+    function showResult(feet,inches) {
+
+        let resultFeet = feet ? `${feet}'`:"";
+        let resultInches = inches ? `${inches}"`:"";
+
+        return `${resultFeet} ${resultInches}`;
+
+    }
+
+    function calc(){
+        //getData
+        let input = inputFilter(document.getElementById("inputInches").value);
+
+
+        //process
+        if(input){
+            const inchesPerFeet = 12;
+            let leftInches = input%inchesPerFeet;
+            let resultFeet = (input - leftInches)/inchesPerFeet;
+
+            //setData
+            document.getElementById("result").innerHTML = showResult(resultFeet,leftInches);
+        }
+
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

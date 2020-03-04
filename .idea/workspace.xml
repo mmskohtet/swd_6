@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7f8f4f6-e0b1-459d-94aa-fc6a22d5b890" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1YbPVbdBT4NOUvimNeB1tINfAfD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7f8f4f6-e0b1-459d-94aa-fc6a22d5b890" name="Default Changelist" comment="" />
+      <created>1583208344762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583208344762</updated>
+      <workItem from="1583208346257" duration="4909000" />
+      <workItem from="1583220201273" duration="5000" />
+      <workItem from="1583293441257" duration="8167000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="205" key="#Notifications" timestamp="1583295952906">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="205" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1583295952906" />
+    <state x="568" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1583296685543">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="568" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583296685543" />
+    <state x="625" y="250" key="run.anything.popup" timestamp="1583302313142">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state x="625" y="250" key="run.anything.popup/0.23.1920.1001@0.23.1920.1001" timestamp="1583302313142" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1583212525783">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583212525783" />
+  </component>
+</project>

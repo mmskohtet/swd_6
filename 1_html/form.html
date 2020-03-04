@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Tag</title>
+</head>
+<body>
+
+
+
+	<form action="" method="" >
+	
+	<fieldset>
+		<legend>HTML Form Tags</legend>
+		<div>
+			<label for="name">Your Name</label>
+			<input type="text" name="name" id="name" value="hein htet" required="">
+		</div>	
+
+		<div>
+			<label for="bd">Date of Birth</label>
+			<input type="date" name="bd" id="bd">
+		</div>	
+
+		<div>
+			<label for="email">Your Email</label>
+			<input type="email" name="email" id="email" >
+		</div>	
+
+		<div>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+		</div>	
+
+		<div>
+			<label for="lag">Location lag</label>
+			<input type="number" name="lag" placeholder="1.234543" min="0" max="100">
+		</div>
+
+		<div>
+			<label for="laung">Location laung</label>
+			<input type="number" name="laung" value="1.234543">
+		</div>
+
+		<div>
+			<label>Gender</label>
+			<br>
+			<label for="male">Male</label><input type="radio" name="gender" id="male" value="male">
+			<label for="female">Female</label><input id="female" type="radio" name="gender" value="female">
+			<label for="other">Orther</label><input id="other" type="radio" name="gender" value="other">
+		</div>
+
+		<div>
+			<label>Nationality</label>
+			<select name="nationality" required="">
+				<option value="" selected="" disabled="">Select Your Country</option>
+				<option value="myanmar">Myanmar</option>
+				<option value="korea" >Korea</option>
+				<option value="japan">Japan</option>
+				<option value="chaina">Chaina</option>
+				<option value="india">India</option>
+			</select>
+		</div>
+
+		<div>
+			<label>Select Your Skill</label>
+			<br>
+			<label for="html">HTML</label><input type="checkbox" name="skill" id="html" value="html">
+			<label for="css">CSS</label><input id="css" type="checkbox" name="skill" value="css">
+			<label for="js">JS</label><input id="js" type="checkbox" name="skill" value="js">
+			<label for="php">PHP</label><input id="php" type="checkbox" name="skill" value="php">
+			<label for="sql">SQL</label><input id="sql" type="checkbox" name="skill" value="sql">
+		</div>
+
+		<div>
+			<label for="photo">Profile Photo</label>
+			<input type="file" name="photo" id="photo">
+		</div>
+
+
+
+		<div>
+			<label for="color">Color</label>
+			<input type="color" name="color" id="color">
+		</div>
+
+		<div>
+			<label for="address">Address</label>
+			<textarea name="address" id="address" rows="10"  cols="50" autofocus=""></textarea>
+		</div>
+
+
+
+
+		<!-- <input type="button" name="btn" value="register"> -->
+		<!-- <input type="submit" name="btn" value="register"> -->
+
+		<button type="submit">Submit Button</button>
+		<button type="button">Normal Button</button>
+
+	</fieldset>	
+
+	</form>
+
+</body>
+</html>
