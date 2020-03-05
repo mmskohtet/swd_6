@@ -50,11 +50,22 @@
             justify-content: center;
             align-items: center;
             border-radius: 50%;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .key:active{
+            transform: scale(1.02);
         }
         .key-orange{
             background-color: #fea009;
             color: #fdf5ce;
+            transition: 0.5s;
         }
+        .key-orange:active{
+            background-color: #fdf5ce;
+            color: #fea009;
+        }
+
         .key-grey{
             background-color: #a5a5a5;
             color: #191919;
@@ -74,30 +85,114 @@
 </head>
 <body>
 
-<div class="calc">
+<div class="calc" id="calc">
     <div class="output">0</div>
     <div class="input">
-        <div class="key key-grey">AC</div>
-        <div class="key key-grey"> </div>
-        <div class="key key-grey">%</div>
-        <div class="key key-orange">/</div>
-        <div class="key key-dark">7</div>
-        <div class="key key-dark">8</div>
-        <div class="key key-dark">9</div>
-        <div class="key key-orange">x</div>
-        <div class="key key-dark">4</div>
-        <div class="key key-dark">5</div>
-        <div class="key key-dark">6</div>
-        <div class="key key-orange">-</div>
-        <div class="key key-dark">1</div>
-        <div class="key key-dark">2</div>
-        <div class="key key-dark">3</div>
-        <div class="key key-orange">+</div>
-        <div class="key key-dark btn-double">0</div>
-        <div class="key key-dark">.</div>
-        <div class="key key-orange">=</div>
+        <div onclick="calc('clear')" class="key key-grey">AC</div>
+        <div onclick="calc('backspace')" class="key key-grey">B</div>
+        <div onclick="calc('%')" class="key key-orange">%</div>
+        <div onclick="calc('/')" class="key key-orange">&#247;</div>
+        <div onclick="calc(7)" class="key key-dark">7</div>
+        <div onclick="calc(8)" class="key key-dark">8</div>
+        <div onclick="calc(9)" class="key key-dark">9</div>
+        <div onclick="calc('*')" class="key key-orange">&times;</div>
+        <div onclick="calc(4)" class="key key-dark">4</div>
+        <div onclick="calc(5)" class="key key-dark">5</div>
+        <div onclick="calc(6)" class="key key-dark">6</div>
+        <div onclick="calc('-')" class="key key-orange">-</div>
+        <div onclick="calc(1)" class="key key-dark">1</div>
+        <div onclick="calc(2)" class="key key-dark">2</div>
+        <div onclick="calc(3)" class="key key-dark">3</div>
+        <div onclick="calc('+')" class="key key-orange">+</div>
+        <div onclick="calc(0)" class="key key-dark btn-double">0</div>
+        <div onclick="calc('.')" class="key key-dark">.</div>
+        <div onclick="calc('calculate')" class="key key-orange">=</div>
     </div>
 </div>
+
+<script>
+
+    let calcMemory = [];
+    let operator = ["%","+","-","*","/"];
+
+    function showScreen(x) {
+
+    }
+
+    function calc(x) {
+
+        let screen = document.querySelector(".output");
+        let currentValue = screen.innerHTML;
+        console.log(currentValue);
+        // showScreen(x);
+
+        if(currentValue == 0){
+            screen.innerHTML = x;
+        }else if(currentValue.length >= 6){
+            screen.style.fontSize = "2em";
+        }
+        else{
+            screen.innerHTML += x;
+        }
+
+        let updateValue = screen.innerHTML;
+        console.log(updateValue);
+
+        if(x == "calculate"){
+            screen.innerHTML = currentValue;
+            // console.log("u click operator");
+            let arr = currentValue.split("");
+            // console.log(arr);
+            let lastIndex = arr.pop();
+
+            console.log(lastIndex);
+
+            if(!operator.includes(lastIndex)){
+                let question = currentValue;
+                let result = eval(currentValue);
+                let room = {question:question,answer:result};
+                calcMemory.push(room);
+                console.log(calcMemory);
+                screen.innerHTML = result;
+            }
+
+
+
+        }else if( x == "clear"){
+
+            screen.innerHTML = 0;
+
+        }else if( x == "backspace"){
+
+            if(currentValue.length == 1){
+                screen.innerHTML = 0;
+            }else{
+                let newCurrentValue = currentValue.substr(0,currentValue.length-1);
+                screen.innerHTML = newCurrentValue;
+            }
+
+        }else if( operator.includes(x) ){
+            // console.log("u click operator");
+            let arr = updateValue.split("");
+            // console.log(arr);
+            let lastIndex = arr.pop();
+            // console.log(arr);
+
+            let beforeLastIndex = arr.pop();
+            // console.log(arr);
+
+            if(operator.includes(lastIndex) && operator.includes(beforeLastIndex)){
+                let newCurrentValue = updateValue.substr(0,updateValue.length-1);
+                screen.innerHTML = newCurrentValue;
+            }
+
+        }
+
+
+
+    }
+
+</script>
 
 </body>
 </html>
