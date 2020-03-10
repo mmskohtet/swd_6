@@ -172,18 +172,25 @@
             }
 
         }else if( operator.includes(x) ){
-            // console.log("u click operator");
-            let arr = updateValue.split("");
-            // console.log(arr);
-            let lastIndex = arr.pop();
-            // console.log(arr);
 
-            let beforeLastIndex = arr.pop();
-            // console.log(arr);
+            console.log("u click operator");
 
-            if(operator.includes(lastIndex) && operator.includes(beforeLastIndex)){
-                let newCurrentValue = updateValue.substr(0,updateValue.length-1);
-                screen.innerHTML = newCurrentValue;
+            if(currentValue != 0){
+
+                let arr = updateValue.split("");
+                // console.log(arr);
+                let lastIndex = arr.pop();
+                // console.log(arr);
+
+                let beforeLastIndex = arr.pop();
+                // console.log(arr);
+
+                if(operator.includes(lastIndex) && operator.includes(beforeLastIndex)){
+                    let newCurrentValue = updateValue.substr(0,updateValue.length-1);
+                    screen.innerHTML = newCurrentValue;
+                }
+            }else{
+                screen.innerHTML = 0;
             }
 
         }

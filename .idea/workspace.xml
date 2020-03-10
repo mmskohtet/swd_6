@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f8f4f6-e0b1-459d-94aa-fc6a22d5b890" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/3_js/js_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/js/exchange.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3_js/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/3_js/calc.html" afterDir="false" />
     </list>
@@ -19,7 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YbPVbdBT4NOUvimNeB1tINfAfD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,7 +43,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4_mini_project" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4_mini_project" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,6 +66,8 @@
       <workItem from="1583293441257" duration="8633000" />
       <workItem from="1583381488355" duration="6744000" />
       <workItem from="1583392514149" duration="241000" />
+      <workItem from="1583466642779" duration="7589000" />
+      <workItem from="1583477087896" duration="15000" />
     </task>
     <servers />
   </component>
@@ -60,6 +83,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="568" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583296685543" />
+    <state x="469" y="179" key="SettingsEditor" timestamp="1583468743790">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583468743790" />
+    <state x="653" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1583477100207">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="653" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583477100207" />
     <state x="625" y="245" key="run.anything.popup" timestamp="1583387466994">
       <screen x="0" y="23" width="1920" height="1001" />
     </state>

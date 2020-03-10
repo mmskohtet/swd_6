@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="calc">
+            <h1 class="result">
+                Exchange Everything
+            </h1>
+            <div class="calc-form">
+                <div class="form-item">
+                    <label for="input">Input</label>
+                    <br>
+                    <input type="number" id="input" placeholder="000" value="100" style="text-align: right;padding: 0 15px;">
+                </div>
+                <div class="form-item">
+                    <label for="from">From</label>
+                    <br>
+                    <select name="" id="from"></select>
+                </div>
+                <div class="form-item">
+                    <label for="to">To</label>
+                    <br>
+                    <select name="" id="to"></select>
+                </div>
+                <div class="form-item">
+                    <button class="exchange-btn" onclick="calc()">Exchange</button>
+                </div>
+            </div>
+        </div>
+        <div class="history"></div>
+    </div>
+
+<script src="js/exchange.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

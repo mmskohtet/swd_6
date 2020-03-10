@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    padding-top:100px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container{
+    width: 800px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.calc{
+
+}
+.calc-form{
+    display: flex;
+    justify-content: space-between;
+}
+.form-item label{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.form-item input,.form-item select{
+    font-size: 1.5em;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.exchange-btn{
+    height: 100%;
+    padding: 0 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.exchange-btn:active{
+    background: gray;
+}
+input:focus,button:focus,select:focus{
+    outline: none;
+}
+
+.result{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+

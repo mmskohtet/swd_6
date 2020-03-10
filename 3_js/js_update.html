@@ -1,0 +1,69 @@
+<script>
+
+    // Arrow Function
+    function aa(a) {
+        console.log("aa");
+    }
+    bb = () => console.log("bb")
+    cc = () => {
+        let text = "hello ";
+        console.log(text);
+    };
+
+    cc();
+
+    //IIFE
+    (function () {
+        console.log("this is iife");
+    })();
+
+    //loop
+    let arr = ["apple","orange","mango","kiwi","berry","grape"];
+    let obj = {name:"hein htet zan",age:26,status:false,address:"bahan"};
+
+    // console.log(obj["name"]);
+
+    console.log("for loop ---");
+    for(let i=0;i<arr.length;i++){
+        console.log(arr[i]);
+    }
+
+    console.log("for in loop ----");
+    for(let x in arr){
+        console.log(arr[x]);
+    }
+
+    console.log("for of loop ---");
+    for(let x of arr){
+        console.log(x);
+    }
+
+    console.log("object loop ---");
+    for(let x in obj){
+        console.log(`${x} => ${obj[x]}`);
+    }
+
+    class First {
+        constructor(name,age,address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+        teach(){
+            return "this is teach";
+        }
+    }
+
+    let me = new First("hein htet zan","age","bahan");
+    let mgmg = new First("mg mg",20,"tarmwe");
+
+    console.log(mgmg);
+
+    let date = new Date();
+
+
+
+
+
+
+</script>
