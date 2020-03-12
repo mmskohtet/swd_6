@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .screen{
+            border:2px solid black;
+            height: 500px;
+            width: 500px;
+            position: relative;
+        }
+        .object{
+            width: 50px;
+            height: 50px;
+            background: #00ADAD;
+            position: absolute;
+        }
+        .console{
+            margin-top: 20px;
+        }
+        .btn{
+            width: 100px;
+            text-align: center;
+            padding: 10px 0;
+            border: none;
+            background: #00ADAD;
+            text-transform: uppercase;
+            color: white;
+        }
+        .btn:active{
+            background: black;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="screen">
+
+        <div class="object"></div>
+
+    </div>
+
+    <div class="console">
+        <button class="btn btn-top">top</button>
+        <button class="btn btn-right">right</button>
+        <button class="btn btn-bottom">bottom</button>
+        <button class="btn btn-left">left</button>
+    </div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script>
+
+    let min=0;
+    let max=500;
+    let velocity = "20px";
+
+    $(".btn-bottom").click(function () {
+        $(".object").animate({top:"+="+velocity});
+    });
+
+
+
+
+
+</script>
+
+</body>
+</html>

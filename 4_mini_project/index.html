@@ -21,7 +21,7 @@
                 <div class="form-item">
                     <label for="input">Input</label>
                     <br>
-                    <input type="number" id="input" placeholder="000" value="100" style="text-align: right;padding: 0 15px;">
+                    <input type="number" id="input" placeholder="0"  style="text-align: right;padding: 0 15px;">
                 </div>
                 <div class="form-item">
                     <label for="from">From</label>
@@ -34,11 +34,37 @@
                     <select name="" id="to"></select>
                 </div>
                 <div class="form-item">
-                    <button class="exchange-btn" onclick="calc()">Exchange</button>
+                    <button class="exchange-btn" onclick="calc()">
+                        <i class="fa fa-refresh"></i>
+                        Exchange
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="history"></div>
+        <div class="history">
+            <h1 class="title-history">
+                History
+            </h1>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th class="text-right">Input</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th class="text-left">Result</th>
+                    <th >Remove</th>
+                    <th >Time</th>
+                </tr>
+                </thead>
+                <tbody id="output">
+                    <tr>
+                        <td colspan="7" class="text-center">There is no History</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 <script src="js/exchange.js"></script>

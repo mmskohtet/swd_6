@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery`</title>
+
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+    </style>
+
+</head>
+<body>
+<div class="one"></div>
+<button class="btn" >click</button>
+
+<script src="js/jquery.js"></script>
+<script>
+
+
+   $(".btn").click(function () {
+
+        $(this).animate({
+            backgroundColor:"orange",
+            color:"white"
+        });
+
+        $(".one").animate({
+           width:"100px"
+        },1000);
+
+
+   });
+
+
+</script>
+
+</body>
+</html>

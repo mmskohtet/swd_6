@@ -12,6 +12,19 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
 .container{
     width: 800px;
     border: 1px solid black;
@@ -36,7 +49,7 @@ body{
 }
 .exchange-btn{
     height: 100%;
-    padding: 0 15px;
+    padding: 0 35px;
     background: black;
     color: white;
     border: none;
@@ -54,5 +67,40 @@ input:focus,button:focus,select:focus{
     margin-bottom: 20px;
     border-bottom: 1px solid black;
 }
+.hr{
+    margin: 20px 0;
+}
+.title-history{
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr, .table td,.table th{
+    border:1px solid black;
+    padding: 10px 15px;
+}
+
+.table th{
+    background: black;
+    color: white;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover{
+    background-color: #dddddd;
+}
+
+.fa-trash{
+    color: #FF0000;
+}
+
 
 

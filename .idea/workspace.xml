@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f8f4f6-e0b1-459d-94aa-fc6a22d5b890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/3_js/js_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_mini_project/js/exchange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3_js/js_revision.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/add_remove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/each.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/game_concole.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/get_set.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/hide_show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_jQuery/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_js/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/3_js/calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +66,11 @@
       <workItem from="1583392514149" duration="241000" />
       <workItem from="1583466642779" duration="7589000" />
       <workItem from="1583477087896" duration="15000" />
+      <workItem from="1583811047842" duration="5276000" />
+      <workItem from="1583899364216" duration="4476000" />
+      <workItem from="1583910841633" duration="10000" />
+      <workItem from="1583985580878" duration="4929000" />
+      <workItem from="1583998702971" duration="69000" />
     </task>
     <servers />
   </component>
@@ -87,10 +90,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583468743790" />
-    <state x="653" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1583477100207">
+    <state x="653" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1583998704641">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="653" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583477100207" />
+    <state x="653" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583998704641" />
     <state x="625" y="245" key="run.anything.popup" timestamp="1583387466994">
       <screen x="0" y="23" width="1920" height="1001" />
     </state>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Hide & show</title>
+
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+    </style>
+
+</head>
+<body>
+<button class="btn-hide">Hide</button>
+<button class="btn-show">Show</button>
+<button class="btn-toggle">Toggle</button>
+<div class="one"></div>
+
+
+<script src="js/jquery.js"></script>
+<script>
+
+
+$(".btn-hide").click(function () {
+    $(".one").slideDown(1000,function () {
+        alert("one is hide");
+    });
+});
+
+$(".btn-show").click(function () {
+    $(".one").slideUp(5000);
+    alert("one class is show");
+});
+
+$(".btn-toggle").click(function () {
+    $(".one").slideToggle(1000);
+});
+
+
+</script>
+
+</body>
+</html>

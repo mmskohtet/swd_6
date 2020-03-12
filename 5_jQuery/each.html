@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery`</title>
+
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+    </style>
+
+</head>
+<body>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+</ul>
+
+<h1 class="bb">my age is 26</h1>
+<h1 class="aa">280px</h1>
+
+<script src="js/jquery.js"></script>
+<script>
+
+    let arr = [];
+    $("ul li").each(function(index,value){
+        console.log($(value).html());
+        arr.push($(value).html());
+    })
+    console.log(arr);
+
+    function extractNumber(selector) {
+        let aa = $(selector).html();
+        let reg = /[0-9]/g;
+        let toString = aa.match(reg).join("");
+        console.log(Number(toString));
+    }
+
+
+</script>
+
+</body>
+</html>

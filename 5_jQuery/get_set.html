@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery`</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+<h1 class="h1">Min ga lar par</h1>
+<a class="link" href="http://google.com" target="_blank">google</a>
+<input type="text" class="input">
+<select class="select">
+    <option value="en">English</option>
+    <option value="cn">China</option>
+    <option value="kr">korea</option>
+</select>
+<button class="btn">Click</button>
+
+<script src="js/jquery.js"></script>
+<script>
+
+$(".btn").click(function () {
+
+    console.log($(this).html());
+    console.log($(".h1").html());
+    console.log($(".select").val());
+    console.log($(".input").val());
+    console.log($(".link").attr("href"));
+
+});
+
+$(".select").on("change",function () {
+    console.log($(this).val());
+});
+
+$(".input").keyup(function () {
+    console.log($(this).val().length);
+});
+
+$(".h1").html("san kyi tar");
+$(".h1").html("san kyi tar");
+$(".input").val("san mal");
+$(".select").val("cn");
+$(".btn").html("click to show");
+$(".link").attr("href","http://facebook.com").html("facebook");
+
+
+
+</script>
+
+</body>
+</html>
