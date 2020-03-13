@@ -80,6 +80,32 @@
         section:nth-child(even){
             background-color: #f5f5f5;
         }
+
+        .scrollToTop{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background:  #40514e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+
+        }
+        .scrollToTop img{
+            width: 30px;
+            animation: 1s aa ease-in-out;
+
+        }
+        .mobile-menu{
+            display: none;
+        }
+        .mobile-menu img{
+            width: 20px;
+        }
+
         @keyframes downSlow {
             0%{
                 transform: translateY(-300px);
@@ -102,6 +128,17 @@
 
         }
 
+        @keyframes aa {
+            from{
+                transform: translateY(150px);
+            }to{
+                 transform: translateY(0);
+             }
+        }
+
+
+
+
         @media screen and (max-width: 780px){
             .nav-items{
                 width: 100px;
@@ -117,13 +154,32 @@
             .nav{
                 border-radius: 30px;
                 width: 90%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: column;
             }
             .nav-link{
-                display: block;
+              display: none;
+                width: 100%;
             }
             .nav-items{
                 display: block;
                 width: 100%;
+            }
+
+            .mobile-menu{
+                display: flex;
+                border: none;
+                background: #FFFFFF;
+                margin: 10px 5px;
+                width: 100%;
+                justify-content: flex-end;
+                padding-right: 15px;
+            }
+            .mobile-menu:focus{
+                outline: none;
+
             }
 
         }
@@ -133,31 +189,104 @@
 
 <nav class="nav">
 
+
+        <button class="mobile-menu">
+            <img src="img/menu.svg" alt="">
+        </button>
+
+
     <ul class="nav-link">
 
+        <li><a class="nav-items active" href="#hotpot">HOTPOT</a></li>
 
+        <li><a class="nav-items" href="#bbq">BBQ</a></li>
+
+        <li><a class="nav-items" href="#pizza">PIZZA</a></li>
+
+        <li><a class="nav-items" href="#burger">BURGER</a></li>
+
+        <li><a class="nav-items" href="#sushi">SUSHI</a></li>
+
+        <li><a class="nav-items" href="#malar">MALAR</a></li>
     </ul>
 
 </nav>
-<div class="output"></div>
+<div class="output">
+    <section class="hotpot" id="hotpot">
+        <h1>HOTPOT Section</h1>
+    </section>
 
+    <section class="bbq" id="bbq">
+        <h1>BBQ Section</h1>
+    </section>
 
+    <section class="pizza" id="pizza">
+        <h1>PIZZA Section</h1>
+    </section>
+
+    <section class="burger" id="burger">
+        <h1>BURGER Section</h1>
+    </section>
+
+    <section class="sushi" id="sushi">
+        <h1>SUSHI Section</h1>
+    </section>
+
+    <section class="malar" id="malar">
+        <h1>MALAR Section</h1>
+    </section>
+</div>
+
+<button class="scrollToTop" style="display: none">
+    <img src="img/top.svg" alt="">
+</button>
 
 <script src="js/jquery.js"></script>
 <script>
 
-    let sections = ["hotpot","bbq","pizza","burger","sushi","malar"];
+    // let sections = ["hotpot","bbq","pizza","burger","sushi","malar"];
+    //
+    // for(x of sections){
+    //     $(".nav-link").append(`
+    //      <li><a class="nav-items" href="#${x}">${x.toUpperCase()}</a></li>
+    //     `);
+    //     $(".output").append(`
+    //         <section class="${x}" id="${x}">
+    //             <h1>${x.toUpperCase()} Section</h1>
+    //         </section>
+    //     `);
+    // }
 
-    for(x of sections){
-        $(".nav-link").append(`
-         <li><a class="nav-items" href="#${x}">${x.toUpperCase()}</a></li>
-        `);
-        $(".output").append(`
-            <section class="${x}" id="${x}">
-                <h1>${x.toUpperCase()} Section</h1>
-            </section>
-        `);
-    }
+
+    let links = [];
+    $(".nav-items").each(function (x) {
+        let c = {tag:$(this).attr("href"),position:$($(this).attr("href")).offset().top};
+        links.push(c);
+    });
+    console.log(links);
+
+
+    $(window).scroll(function () {
+        let currentPosition = $(this).scrollTop();
+
+
+        if(currentPosition > 1000){
+            $(".scrollToTop").fadeIn(1000);
+        }else{
+            $(".scrollToTop").fadeOut(1000);
+        }
+
+
+
+        links.map(function (el,index) {
+            if(currentPosition >= el.position){
+                $(".nav-items").removeClass("active");
+                $(`.nav-items[href='${el.tag}']`).addClass("active");
+            }
+        })
+
+
+    });
 
 
     $(".nav-items").click(
@@ -166,7 +295,16 @@
             $(this).addClass("active");
         }
     );
+    $(".scrollToTop").click(function () {
+        $("html").animate({
+            scrollTop:0
+        },500)
 
+    });
+
+    $(".mobile-menu").click(function () {
+        $(".nav-link").slideToggle(500);
+    });
 
 </script>
 
