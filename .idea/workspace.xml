@@ -2,10 +2,230 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f8f4f6-e0b1-459d-94aa-fc6a22d5b890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5_jQuery/img/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5_jQuery/img/top.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/jquery_project/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/jquery_project/img/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/jquery_project/img/top.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/jquery_project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/jquery_project/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_mini_project/jquery_project/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/animate_wow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/data_table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-landscape-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-landscape-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-landscape-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-landscape-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-landscape-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-landscape-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-portrait-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-portrait-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-portrait-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-portrait-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-portrait-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-portrait-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-square-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-square-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-square-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-square-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-square-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/img/poe-square-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/slick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/summer_note.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/animate_it/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/config.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/fonts/slick.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/fonts/slick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/fonts/slick.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/fonts/slick.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick-theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/slick/slick.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/font/summernote.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/font/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/font/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/font/summernote.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ar-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ar-AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-bg-BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-bg-BG.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ca-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-cs-CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-da-DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-de-DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-el-GR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-es-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-es-EU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-es-EU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-fa-IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-fi-FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-fi-FI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-fr-FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-gl-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-gl-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-he-IL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-hr-HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-hu-HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-id-ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-it-IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ja-JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ko-KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-lt-LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-lt-LT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-lt-LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-lt-LV.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-mn-MN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-mn-MN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-nb-NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-nl-NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-pl-PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-pt-PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ro-RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ru-RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sk-SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sl-SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sl-SI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sr-RS-Latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sr-RS-Latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sr-RS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sr-RS.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-sv-SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ta-IN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-ta-IN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-th-TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-tr-TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-uk-UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-uz-UZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-uz-UZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-vi-VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/lang/summernote-zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-bs4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-bs4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-bs4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-bs4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-bs4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-bs4.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-lite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-lite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-lite.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-lite.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-lite.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote-lite.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/summer_note/summernote.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/venobox/venobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/venobox/venobox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/vendor/wow/wow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_jquery_plugin/venobox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/MaterialIcons-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/MaterialIcons-Regular.ijmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/MaterialIcons-Regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/MaterialIcons-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/MaterialIcons-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/MaterialIcons-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/material-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/fonts/mm.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/Asset 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/Asset 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/cake.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/curry.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/giphy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/ice-cream.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/pasta-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/pasta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/poe-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/poe-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/img/poe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bootstrap/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_jQuery/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_jQuery/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_mini_project/js/exchange.js" beforeDir="false" afterPath="$PROJECT_DIR$/4_mini_project/js_project/js/exchange.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_jQuery/game_concole.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_jQuery/nav.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +252,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/5_jQuery/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/7_bootstrap" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/5_jQuery/img" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4_mini_project/js_project" />
       <recent name="$PROJECT_DIR$/4_mini_project" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin/vendor" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin/vendor/venobox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/7_bootstrap" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin/vendor" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin/vendor/wow" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin/vendor/animate_it" />
+      <recent name="$PROJECT_DIR$/7_jquery_plugin/vendor/venobox" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -64,6 +294,7 @@
       <workItem from="1583985580878" duration="4929000" />
       <workItem from="1583998702971" duration="69000" />
       <workItem from="1584072413056" duration="5927000" />
+      <workItem from="1584332529301" duration="5075000" />
     </task>
     <servers />
   </component>
@@ -75,6 +306,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="560" y="205" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1583295952906" />
+    <state x="538" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584334399649">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="538" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1584334399649" />
     <state x="568" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1583296685543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
