@@ -7,15 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>without bootstrap</title>
     <link href="vendor/summer_note/summernote-lite.min.css" rel="stylesheet">
+    <style>
+        .box{
+            height: 500px;
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
-<div id="summernote"></div>
+<div class="box">
+    <div id="summernote"></div>
+</div>
 
 
 <script src="vendor/jquery-3.3.1.min.js"></script>
 <script src="vendor/summer_note/summernote-lite.min.js"></script>
 <script>
-
+    $("#summernote").summernote({
+        height:"500px",
+    });
 </script>
 </body>
 </html>

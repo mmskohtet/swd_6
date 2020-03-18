@@ -16,6 +16,8 @@
         }
         .gallery{
             width: 800px;
+            margin: auto;
+            columns: 250px 3;
         }
     </style>
 </head>
@@ -23,16 +25,18 @@
 
 <div class="container">
     <div class="gallery">
-        <a class="venobox" href="img/poe-portrait-1.jpg">
-            <img src="img/poe-portrait-1.jpg" alt="image alt"/>
+<!--        real photo-->
+        <a class="venobox" data-gall="one" href="img/poe-portrait-1.jpg">
+<!--            //sample photo-->
+            <img src="img/poe-square-1.jpg" alt="image alt"/>
         </a>
-        <a class="venobox" href="img/poe-landscape-1.jpg">
+        <a class="venobox" data-gall="two" href="img/poe-landscape-1.jpg">
             <img src="img/poe-landscape-1.jpg" alt="image alt"/>
         </a>
-        <a class="venobox" href="img/poe-portrait-2.jpg">
+        <a class="venobox" data-gall="two" href="img/poe-portrait-2.jpg">
             <img src="img/poe-portrait-2.jpg" alt="image alt"/>
         </a>
-        <a class="venobox" href="img/poe-square-1.jpg">
+        <a class="venobox" data-gall="one" href="img/poe-square-1.jpg">
             <img src="img/poe-square-1.jpg" alt="image alt"/>
         </a>
         <a class="venobox" href="img/poe-portrait-3.jpg">
@@ -41,7 +45,7 @@
         <a class="venobox" href="img/poe-square-2.jpg">
             <img src="img/poe-square-2.jpg" alt="image alt"/>
         </a>
-        <a class="venobox" href="img/poe-landscape-3.jpg">
+        <a class="venobox" data-gall="one" href="img/poe-landscape-3.jpg">
             <img src="img/poe-landscape-3.jpg" alt="image alt"/>
         </a>
 
@@ -50,7 +54,7 @@
 <script src="vendor/jquery-3.3.1.min.js"></script>
 <script src="vendor/venobox/venobox.min.js"></script>
 <script>
-
+    $(".venobox").venobox();
 </script>
 </body>
 </html>
