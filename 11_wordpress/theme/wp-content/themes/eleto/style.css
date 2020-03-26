@@ -1,0 +1,107 @@
+/*
+ Theme Name:   Eleto
+ Theme URI:    https://wpzita.com/eleto/
+ Description:  Eleto is a child theme of zita WordPress theme, It provides very unique look and extra post layout. Zita is completely builder based theme, With super fast and highly customizable options. Zita works with any of your favorite page builder like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, Brizy etc. Best Suitable for creating any type of website such a corporate, store, agency, blog, portfolio, restaurant, wedding, construction, hospital, school, interior, car workshop, life coach, wine shop, barber shop, furniture shop, yoga, resume, charity, digital marketing etc. Zita includes 8 unique header layout and 8 footer widget layout which makes it extremely powerful. Some more amazing feature are #Woocommerce ready #RTL Ready #Full Responsive #Edit settings in tablet & mobile #Top header #Bottom header #Top footer #Bottom Footer #Transparent Header. Looking for perfect base theme? Looking for perfect multipurpose theme? No need to Look further! Just go with Zita demos: https://wpzita.com/. Zita is built with best SEO practice and best friend of Woocommerce and Elementor.
+ Author:       WpZita Team
+ Author URI:   https://wpzita.com/
+ Template:     zita
+ Version:      1.0.2
+ License:      GNU General Public License v3 or later
+ License URI:   http://www.gnu.org/licenses/gpl-3.0.html
+ Tags: two-columns, right-sidebar, custom-menu, custom-background, editor-style, translation-ready, full-width-template, flexible-header, sticky-post, theme-options, one-column, e-commerce, blog, photography, threaded-comments, custom-colors 
+ Text Domain: eleto
+*/
+#content.site-content{
+  display:block;
+}
+#content .entry-content-outer-wrapper.eleto-blog-layout:before{
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: block;
+}
+
+#content .entry-content-outer-wrapper.eleto-blog-layout{
+    padding: 20px;
+   position:relative;
+}
+.eleto-blog-layout .entry-content-wrapper {
+    margin: 0 auto;
+    max-width: 75%;
+    padding:20px 0px;
+}
+article.zita-article .eleto-blog-layout h2.entry-title{
+font-size:36px;
+font-family: "Catamaran-bold", sans-serif;
+
+}
+.eleto-blog-layout .entry-meta {
+font-family: "Catamaran-bold", sans-serif;
+    margin-top: 10px;
+
+}
+.eleto-blog-layout .entry-meta a{
+    color:#666;
+}
+.eleto-blog-layout .post-img img{
+    -webkit-box-shadow: 0 3px 12px -1px rgba(7, 10, 25, .2), 0 22px 27px -20px rgba(7, 10, 25, .2);
+    box-shadow: 0 3px 12px -1px rgba(7, 10, 25, .2), 0 22px 27px -20px rgba(7, 10, 25, .2);
+    border-radius: 15px;
+}
+
+.eleto-blog-layout .read-more a {
+    background: #f13b3b;
+    color: #fff!important;
+    padding: 5px 20px;
+}
+.eleto-blog-layout .entry-content p {
+    margin-bottom: 20px!important;
+}
+.eleto-blog-layout .post-img a:hover:after {
+    opacity: .15;
+}
+.eleto-blog-layout .post-img a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #000;
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+        border-radius: 15px;
+}
+
+.fullwidthstrechched #content .entry-content-outer-wrapper.eleto-blog-layout:before{
+background:transparent;
+}
+.fullwidthstrechched #content .entry-content-outer-wrapper.eleto-blog-layout{
+padding:0
+}
+.fullwidthcontained #content .entry-content-outer-wrapper.eleto-blog-layout:before{
+    background:transparent;
+}
+.fullwidthstrechched #content .entry-content-outer-wrapper.eleto-blog-layout{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+.fullwidthcontained #content .entry-content-outer-wrapper.eleto-blog-layout{
+padding:0;
+padding-bottom: 25px;
+}
+@media screen and (max-width: 767px){
+
+    article.zita-article .eleto-blog-layout h2.entry-title{
+font-size:24px;
+font-family: "Catamaran-bold", sans-serif;
+
+}
+}

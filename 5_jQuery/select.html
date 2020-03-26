@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<select name="" id="division">
+    <option value="" disabled selected>Select Division</option>
+    <option value="yangon">Yangon</option>
+    <option value="mandalay">Mandalay</option>
+    <option value="naypyitaw">Nay Pyi Taw</option>
+</select>
+
+<br>
+<br>
+
+<select name="" id="city">
+
+    <option value="" disabled selected>Select City</option>
+
+    <option value="bahan" class="city yangon">bahan</option>
+    <option value="tarmwe" class="city yangon">tarmwe</option>
+    <option value="lathar" class="city yangon">lathar</option>
+
+    <option value="kyone" class="city mandalay">kyone</option>
+    <option value="kwal sal kan" class="city mandalay">kwal sal kan</option>
+
+</select>
+
+<script src="js/jquery.js"></script>
+<script>
+
+    $(".city").hide()
+
+    $("#division").on("change",function () {
+        let currentDivision = $(this).val();
+        $(".city").hide();
+        $("."+currentDivision).show();
+    })
+
+</script>
+
+</body>
+</html>
