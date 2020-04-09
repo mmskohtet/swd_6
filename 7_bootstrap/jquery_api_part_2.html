@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Api Part 2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/data_table/dataTables.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .world-table-row{
+            transition: 0.5s;
+        }
+        .world-table-row:active{
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+<body>
+<div class="progress top-progress position-fixed w-100" style="z-index: 1000;display: none">
+    <div class="progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<div class="container">
+    <div class="row py-5">
+        <div class="col-12">
+            <div class="">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+
+                                <div class="d-flex align-items-center justify-content-around">
+                                    <div>
+                                        <i class="fa fa-globe fa-3x"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-0">
+                                            <span>All Cases</span>
+                                            <br>
+                                            <span class="cases"> <i class="fa fa-spinner fa-pulse"></i> </span>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Deaths : <span class="deaths"> <i class="fa fa-spinner fa-pulse"></i> </span></h4>
+                                <div class="progress">
+                                    <div class="progress-bar deaths-progress bg-danger progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Recover : <span class="recovered"> <i class="fa fa-spinner fa-pulse"></i> </span></h4>
+                                <div class="progress">
+                                    <div class="progress-bar recovered-progress bg-success progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Active : <span class="case-active"> <i class="fa fa-spinner fa-pulse"></i> </span></h4>
+                                <div class="progress">
+                                    <div class="progress-bar active-progress bg-warning progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-3"></div>
+        <div class="col-12 col-md-9">
+            <table class="table table-hover world-data">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cases</th>
+                    <th>Death</th>
+                    <th>Recover</th>
+                    <th>Active</th>
+                </tr>
+                </thead>
+                <tbody class="world-list">
+                    <tr>
+                        <td class="text-center" colspan="5">
+                            <i class="fa fa-spinner fa-pulse"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="vendor/data_table/jquery.dataTables.min.js"></script>
+<script src="vendor/data_table/dataTables.bootstrap4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+
+
+    function getPercentage(x,total){
+        return (x/total * 100).toFixed(0)+"%";
+    }
+
+    function showData(x = "myanmar") {
+        $(".top-progress").show();
+        $.get("https://corona.lmao.ninja/countries/"+x,function (data) {
+            $(".cases").html(data.cases);
+            $(".deaths").html(data.deaths);
+            $(".deaths-progress").css("width",getPercentage(data.deaths, data.cases));
+            $(".recovered").html(data.recovered);
+            $(".recovered-progress").css("width",getPercentage(data.recovered, data.cases));
+            $(".case-active").html(data.active);
+            $(".active-progress").css("width",getPercentage(data.active, data.cases));
+
+        }).done(function () {
+            $(".top-progress").hide()
+        });
+
+    }
+
+    showData();
+
+    function aa(){
+        console.log("u click")
+    }
+
+    $.get("https://corona.lmao.ninja/countries",function (data) {
+        $(".world-list").empty();
+        data.map(function (el,index) {
+            $(".world-list").append(`
+                <tr class="world-table-row" onclick="showData('${el.country}')">
+                    <td>${el.country}</td>
+                    <td>${el.cases}</td>
+                    <td>${el.deaths}</td>
+                    <td>${el.recovered}</td>
+                    <td>${el.active}</td>
+                </tr>
+            `);
+        });
+    }).done(function () {
+        $(".world-data").dataTable();
+    });
+
+    $(".world-table-row").click(function () {
+        console.log("U clicked row");
+    });
+
+</script>
+
+</body>
+</html>

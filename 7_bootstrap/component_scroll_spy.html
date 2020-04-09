@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            position: relative;
+        }
+    </style>
+
+</head>
+<body>
+
+<nav id="scroll-spy" class="navbar navbar-light bg-light shadow position-sticky" style="top: 0">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#one">one</a>
+                <a class="dropdown-item" href="#two">two</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#three">three</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div data-spy="scroll" data-target="#scroll-spy" data-offset="0">
+
+    <div class="min-vh-100 bg-light d-flex justify-content-center align-items-center" id="home">
+        <p class="h1">This is home</p>
+    </div>
+    <div class="min-vh-100 d-flex justify-content-center align-items-center" id="about">
+        <p class="h1">This is About</p>
+    </div>
+
+    <div class="min-vh-100 d-flex bg-light justify-content-center align-items-center" id="one">
+        <p class="h1">This is One</p>
+    </div>
+
+    <div class="min-vh-100 d-flex justify-content-center align-items-center" id="two">
+        <p class="h1">This is Two</p>
+    </div>
+
+    <div class="min-vh-100 d-flex bg-light justify-content-center align-items-center" id="three">
+        <p class="h1">This is Three</p>
+    </div>
+
+</div>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $('body').scrollspy({ target: '#scroll-spy' });
+</script>
+
+</body>
+</html>

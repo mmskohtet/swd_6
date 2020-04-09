@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Api part 1</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 py-5">
+
+            <button class="btn btn-primary get-data">Get Data</button>
+
+            <br>
+            <br>
+
+            <table class="table table-hover output-table" style="display: none">
+                <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody class="output-one">
+                <tr>
+
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/app.js"></script>
+<script>
+
+   $(".get-data").click(function () {
+
+       $(".get-data").append(` <i class="fa fa-pulse fa-spinner data-loading"></i>`);
+
+       $.get("https://corona.lmao.ninja/all",function (data) {
+           console.log(data);
+           $(".output-one").empty();
+           for(x in data){
+               $(".output-one").append(`
+            <tr>
+                <td>${x}</td>
+                <td>${data[x]}</td>
+            </tr>
+            `);
+           }
+       }).fail(function () {
+           alert("Data getting fail");
+           $(".output-one").append(`<tr><td colspan="2"> <i class="fa fa-spinner fa-pulse"></i> Getting Data Fail ... </td></tr>`);
+       }).done(function () {
+           $(".output-table").show(500,function () {
+               $(".data-loading").fadeOut(500,function () {
+                    $(this).remove();
+               })
+
+           });
+
+       });
+
+   });
+
+</script>
+</body>
+</html>
