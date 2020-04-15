@@ -6,6 +6,7 @@
 
 html{
 
+    scroll-behavior: smooth;
 
 }
 
@@ -22,13 +23,45 @@ body{
 .site-nav{
     position: absolute;
     top: 0;
+    z-index: 50;
 }
 .home{
     background-image: url(../img/bg-Shape.svg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 50%;
+    position: relative;
 }
+
+.scroll-to-next{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social-v{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-v a{
+    display: block;
+    margin-bottom: 10px;
+}
+
 .about{
     background-color: #7E76F910;
 }
@@ -84,12 +117,32 @@ body{
     background-color: #7E76F9 !important;
 }
 
-.footer{
-    background-image: url("../img/footer-1.svg"),url("../img/footer-2.svg");
+.contact{
+    background-image: url("../img/footer-2.svg"),url("../img/footer-1.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    /*height: 350px;*/
-    padding: 150px 0 0 0;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.footer{
+    padding-top: 150px;
+}
+
+.ani-delay-1{
+    animation-delay: 0.5s;
+}
+.ani-delay-2{
+    animation-delay: 1s;
+}
+.ani-delay-3{
+    animation-delay: 1.5s;
+}
+.ani-delay-4{
+    animation-delay: 2s;
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
 }
 
 
@@ -99,9 +152,30 @@ body{
         width: 100% !important;
     }
 
-    .footer{
-        background-size: cover;
-        background-position: center;
+    .contact{
+        background-size: auto 80%;
+        background-position: center bottom;
+    }
+
+    .scroll-to-next{
+        bottom: 10px;
+        left: auto;
+        right: 10px;
+        margin: 10px;
+        /*display: none;*/
+    }
+
+    .social-v{
+
+        bottom: 80px;
+        left: auto;
+        right: 35px;
+
+        /*display: none;*/
+
+    }
+    .contact{
+        background-attachment: scroll;
     }
 
 }
