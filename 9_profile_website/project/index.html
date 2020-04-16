@@ -20,41 +20,35 @@
     <div class="row">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 px-0">
                     <nav class="navbar align-items-center d-flex navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">
                             <img src="img/logo-long.svg" class="site-logo" alt="">
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars fa-2x menu-icon"></i>
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link text-uppercase" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-uppercase" href="#">Blog</a>
+                                    <a class="nav-link text-uppercase" href="#home">Home</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-uppercase" href="#">About</a>
+                                    <a class="nav-link text-uppercase" href="#about">About</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-uppercase" href="#">Contact Us</a>
+                                    <a class="nav-link text-uppercase" href="#services">Services</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#pricing">Pricing</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#contact">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -66,7 +60,7 @@
         </div>
     </div>
 </header>
-<section class="home container-fluid">
+<section id="home" class="home container-fluid">
     <div class="row">
         <div class="container">
             <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
@@ -113,7 +107,7 @@
         <img src="img/mouse.svg" class="animated bounce"  style="width: 15px;animation-iteration-count: infinite" alt="">
     </a>
 </section>
-<section id="about" class="container-fluid about">
+<section id="about" class="container-fluid about py-5 py-md-0">
     <div class="row min-vh-100 align-items-center py-5 py-md-0">
         <div class="col-12 col-md-6 py-3 py-md-5">
             <div class="text-right mr-5 mr-md-0 wow slideInLeft">
@@ -138,7 +132,7 @@
         </div>
     </div>
 </section>
-<section class="container-fluid services">
+<section id="services" class="container-fluid services">
     <div class="row pb-5 min-vh-100">
         <div class="container">
             <div class="row pt-5">
@@ -263,7 +257,7 @@
         </div>
     </div>
 </section>
-<section class="container-fluid pricing">
+<section id="pricing" class="container-fluid pricing">
     <div class="row py-5">
         <section class="container">
             <div class="row">
@@ -407,7 +401,7 @@
         </section>
     </div>
 </section>
-<section class="container-fluid contact">
+<section id="contact" class="container-fluid contact">
     <div class="row">
         <div class="container">
             <div class="row py-5">
