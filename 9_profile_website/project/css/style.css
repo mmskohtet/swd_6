@@ -51,15 +51,31 @@ body{
     outline: none;
 }
 
+.nav-link{
+    padding: 0.5rem 1.3rem !important;
+}
+
+.nav-link.current-section{
+    border: 2px solid white;
+
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
 .site-nav-scroll .nav-link{
     color: #1A129F !important;
+}
+.site-nav-scroll .nav-link.current-section{
+    border: 2px solid #1A129F;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
 }
 .site-nav-scroll .menu-icon{
     color: #1A129F;
 }
 
 .home{
-    background-image: url(../img/bg-Shape.svg);
+    background-image: url(../img/bg-shape.svg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 50%;
@@ -93,6 +109,18 @@ body{
 .social-v a{
     display: block;
     margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.social-icon a{
+    transition: 0.5s;
+}
+.social-icon a:hover{
+    transform: scale(1.5);
+}
+
+.social-v a:hover{
+    transform: scale(1.5);
 }
 
 .about{
@@ -119,6 +147,13 @@ body{
 .services-card:hover{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     transform: scale(0.98);
+}
+.services-card img{
+    transition: 0.5s;
+}
+
+.services-card:hover img{
+    transform: translateX(20px);
 }
 
 .services-card-des{
@@ -152,7 +187,7 @@ body{
 
 .contact{
     background-image: url("../img/footer-2.svg"),url("../img/footer-1.svg");
-    background-size: 100%;
+    background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
@@ -180,6 +215,12 @@ body{
 
 @media screen and (max-width: 780px ) {
 
+    .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        padding: 0.5rem 1.3rem !important;
+    }
+
     .site-nav{
         background-color: #ffffffee;
         backdrop-filter: blur(5px);
@@ -202,11 +243,20 @@ body{
         box-shadow: 0 0 5px #00000015;
         border-radius: 10em;
     }
+    .contact{
+        background-size: auto 80%;
+    }
 
 }
 
 
 @media screen and (max-width: 576px ){
+
+    .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        padding: 0.5rem 1.3rem !important;
+    }
 
     .content-2,.content-2-text{
         width: 100% !important;
